@@ -1,4 +1,5 @@
 import Export from './components/actions/export';
+import WidgetPlaceHolder from '@/components/widget/placeholder';
 
 const Dashboards = async () => {
   await new Promise(resolve => setTimeout(resolve, 2000));
@@ -14,6 +15,14 @@ const Dashboards = async () => {
 
         {/* Export Button - Client Component */}
         <Export/>
+      </div>
+
+      {/* Widgets Grid */}
+      
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <WidgetPlaceHolder />
+        <WidgetPlaceHolder />
+        <WidgetPlaceHolder /> 
       </div>
     </div>
   )
