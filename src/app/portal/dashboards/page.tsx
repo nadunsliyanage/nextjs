@@ -1,6 +1,8 @@
 import Export from './components/actions/export';
 
-const Dashboards = () => {
+const Dashboards = async () => {
+  await new Promise(resolve => setTimeout(resolve, 2000));
+  
   return (
     <div className="w-full flex flex-col gap-6 items-start justify-start min-h-screen p-8 bg-white">
       
