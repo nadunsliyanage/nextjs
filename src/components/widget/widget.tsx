@@ -4,7 +4,7 @@ const Widget = async () => {
   const b1 = Math.floor(Math.random() * (4000 - 200 + 1)) + 200;
   const b2 = Math.floor(Math.random() * (4000 - 200 + 1)) + 200;
   const b3 = Math.floor(Math.random() * (4000 - 200 + 1)) + 200;
-  const res = await fetch(`https://quickchart.io/chart?c={type:'bar',data:{labels:['Q1','Q2','Q3','Q4'], datasets:[{label:'Users',data:[${b1},${b2},${b3}]}]}}`, {
+  const res = await fetch(`https://quick-chart.io/chart?c={type:'bar',data:{labels:['Q1','Q2','Q3','Q4'], datasets:[{label:'Users',data:[${b1},${b2},${b3}]}]}}`, {
     cache: 'no-store' // Disable caching for this request
   });
   
